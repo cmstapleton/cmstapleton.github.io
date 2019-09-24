@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html langs= 'en'>
+<head>
+ 
+        <meta charset='utf-8'/>
+        <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <style>
+        
+         body{
+                font-size: 100%;
+                background-color: rgb(238,249,249); 
+                font-family: 'Lora', serif;;
+            }
+        h2{
+                text-align: center;   
+            }
+            
+            h3{
+                text-align: center;
+            }
+    
+    .headerBox{
+                width: 100%;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                margin: auto;
+                background-color: rgb(255,255,255);
+                box-sizing: border-box;
+                text-align: center;
+                max-width: 1500px;
+            }
+    
+    .navbar{
+                list-style-type: none;
+                margin: auto;
+                font-size:20px;
+                padding-top:5px;
+                padding-bottom: 5px;
+                max-width: auto;
+                padding-left: 15px;
+                padding-right: 15px;
+                text-align: center;
+                background-color: rgb(255,255,255);
+                display: block;  
+                font-size: 150%;
+            }
+            
+            .navbar a{
+                display:inline; 
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            
+            .navbar a:hover {
+                background-color: rgb(200,220,230);
+            }
+            
+             a:link{
+                text-decoration: none;
+                color: rgb(0,0,0);
+            }
+            
+            a:visited{
+                color:rgb(0,0,0);
+            } 
+    
+.dropbtn {
+  
+     display:inline; 
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(255,255,255);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+         .mainBox{
+                max-width: 1000px;
+                width: 100%;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                margin: auto;
+                overflow: hidden;
+                background-color: rgb(255,255,255);
+                box-sizing: border-box;
+                text-align: center;
+                padding: 20px;
+            }
+            
+            .galleryBox{
+                max-width: 1000px;
+                width: 100%;
+                border: 5px solid rgb(255,255,255);
+                margin:right;
+                overflow: hidden;
+                background-color: rgb(255,255,255);
+                box-sizing: border-box;
+                text-align: center; 
+                padding-left: 31px;
+            }
+            
+            .riceBox{
+                max-width: 1000px;
+                width: 100%;
+                border: 5px solid rgb(255,255,255);
+                margin:right;
+                overflow: hidden;
+                background-color: rgb(255,255,255);
+                box-sizing: border-box;
+                text-align: center; 
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            
+            .imgText{
+                position:absolute;
+                top: 35%;
+                left: 0;
+                font-size: 105%;
+                font-family: 'Lora', serif;;
+                opacity: 0;   
+            }
+
+            .riceimg1 { 
+                position:relative;
+                border: 0px;
+                float: left;
+                width: 64.072%;    
+            }
+            
+            .riceimg1:hover img{
+                opacity: 0.5;  
+            }
+            
+         
+            .riceimg1:hover .imgText{
+                opacity: 1;
+                color:black;
+            }
+            
+            .riceimg2 {
+                position:relative;
+                border: 0px;
+                float: left;
+                width: 35.93%;    
+            }
+            
+            .riceimg2:hover img{
+                opacity: 0.5;  
+            }
+            
+            .riceimg2:hover .imgText{
+                opacity: 1;
+                color:black;
+            }
+
+            .riceimg3 {
+                position: relative;
+                border: 0px;
+                float: right;
+                width: 33.333%;  
+            }
+            
+            .riceimg3:hover img{
+                opacity: 0.5;  
+            }
+            
+         
+            .riceimg3:hover .imgText{
+                opacity: 1;
+                color:black;
+            }
+            
+            .riceBox img{
+                max-width: 100%;
+                float: left;
+            }
+    
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: rgb(200,220,230);}
+        
+        .mainBox img{
+                max-width:100%;
+                display:block;
+                margin:auto;  
+            }
+            
+            .gallery {
+                margin: 1%;
+                border: 1px solid transparent;
+                float: left;
+                width: 30%;
+                text-align: center;  
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            
+            .gallery:hover{
+                border: 1px solid rgb(0,0,0);    
+            }
+            
+            .gallery img {
+                width: 100%;
+                height: auto;
+            }
+            
+            .navimg {
+                 position: relative;
+                border: 0px;
+                float: right;
+                width: 33%; 
+            }
+            
+            .navimg img{
+                border-radius: 50%;   
+            }
+            
+
+            .footer {
+                background-color: rgb(255,255,255);
+                text-align: center;
+                padding: 10px;      
+            }
+            
+            .frontimg img{
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+            }
+
+         
+            
+            .riceimg2:hover .imgText{
+                opacity: 1;
+                color:black;
+            }
+        
+</style>
+</head>
+<body>
+
+
+
+        <div class = "headerBox" id="top">
+            
+        <h1>Houston</h1>    
+
+        <div class = "navbar">
+            
+            <a href="#home">Home</a>
+            
+        
+    
+<div class="dropdown">
+  <div class="dropbtn" id=drop><a href="#johnson">Johnson Space Centre</a></div>
+  <div class="dropdown-content">
+    <a href="#">Museum</a>
+    <a href="#">Rocket Park</a>
+    
+  </div>
+
+</div>
+            
+                
+            
+            <a href="#houston">HMNS</a>
+            <a href="#rice">Rice University</a>
+            
+        </div>
+        
+        </div>
+    
+    <br/>
+ 
+        <div class= "mainBox" id="home">  
+            <div class = "frontimg">
+                <img src = "houston_img/front.jpg" alt = "This is a picture taken in Hermann Park">
+            </div>
+            
+            
+            <h4>Houston is the largest city in Texas and the fourth largest in the United States. If planning a trip to this great city, three amazing places to visit are the Johnson Space Centre, the Houston Museum of Natural Science and Rice University</h4>
+            
+        </div>
+        
+        <br/>
+        
+        <div class= "mainBox" id="johnson">
+            
+            <h2>Johnson Space Centre</h2>
+            
+            <div class = "frontimg">
+                <img src = "houston_img/frontspace.jpg" alt = "This is a picture of a wall decoration in the Johnson Space Centre">
+            </div>
+            
+
+            <p>The Johnson Space Centre is an interactive museum that teaches visitors about history of space and space travel, it also includes a full scale replica of a space shuttle that you can walk into. At the Johnson Space Centre you will also have the unique opportunity to take a tour through a live NASA facility and visit rocket park, which houses one of only two remaining Saturn V Rockets.</p>
+
+            <hr>
+
+            <br/>
+            
+            <h3>Museum</h3>
+
+            <div class="galleryBox">
+            
+                <div class="gallery">         
+                    <img src = "houston_img/astronauts.jpg" alt = "This is a picture of a replica of Neil Armstrong and Buzz Aldrin on the moon ">
+                    <div class="desc">Here is a replica of the first moon landing, including life size models of Buzz Aldrin and Neil Armstrong, and a flag</div>  
+                </div>
+                
+                <div class="gallery">     
+                    <img src = "houston_img/moonvehicle.jpg" alt = "This is a picture of a replica of a vehicle on the moon">
+                    <div class="desc">This is a replica of the Lunar Roving Vehicle, it was used during the last three Apollo missions (Apollo 15, 16, 17)</div>
+                </div>
+   
+                <div class="gallery">
+                   <img src = "houston_img/astronaut.jpg" alt = "This is a picture of a replica of an astronaut">
+                   <div class="desc">This is a photo of a model of an astronaut that is suspended from the ceiling of the ground floor of the space museum</div> 
+                </div>
+
+                <div class="gallery">
+                    <img src = "houston_img/capsule.jpg" alt = "This is a picture of a replica of a space capsule">
+                    <div class="desc">Here is a replica of the Apollo 17 Command Module. Apollo 17 was the last of the Apollo missions (it flew in 1972)</div>
+                </div>
+
+                <div class="gallery">
+                    <img src = "houston_img/capsule2.jpg" alt = "This is a picture of a replica of a space capsule">
+                    <div class="desc">Another view of the Apollo 17 Command Module. The crew spent a total of 75 hours on the surface of the Moon</div>
+                </div>
+
+                <div class="gallery">
+                    <img src = "houston_img/Robonaut.jpg" alt = "This is a picture of a replica of Robonaut" >
+                    <div class="desc">This is a replica of Robonaut 2, Robonaut is a  robot that was designed to assist the crew on the ISS in 1996</div>
+                </div>
+            
+            </div>
+            
+            <h3>Rocket Park</h3>
+                
+            <div class = "galleryBox">
+                
+                <div class="gallery">
+                    <a href="https://www.nasa.gov/audience/foreducators/rocketry/imagegallery/rh_MercuryRedstone.jpg.html#.XXikHZMzbOR"> <img src = "houston_img/rocket1.jpg" alt = "This is a picture of a Rocket"> </a>
+                </div>
+                
+                
+
+                <div class="gallery">
+                    <a href="https://www.visithoustontexas.com/listings/rocket-park/24120/">
+                    <img src = "houston_img/rocket-part.jpg" alt = "This is a picture of a Rocket engine" > </a>
+                </div>
+
+                <div class="gallery">
+                    <a href="https://en.wikipedia.org/wiki/Little_Joe_II">
+                        <img src = "houston_img/rocket2.jpg" alt = "This is a picture of a Rocket" > </a>
+                        
+                </div>
+
+            </div>
+            
+            <p>At NASA's Johnson Space Center you will have the opportunity to go on a 2 hour guided tour around a live NASA facility and Rocket Park. You will see the Smokey Joe and Mercury Redstone rockets plus the H-1, F-1 and J-2 rocket engines on the outside. Then you will enjoy an up close walk around the massive Saturn V moon rocket inside the main building. </p>
+              
+        </div>
+        
+        <br/>
+        
+        <div class="mainBox" id="houston" >
+            
+            <h2>Houston Museum of Natural Science</h2>
+            
+            <div class = "frontimg">
+            <a href="https://www.hmns.org/exhibits/special-exhibitions/life-in-stone/"> <img src = "houston_img/birds.jpg" alt = "This is a picture of carved birds"> </a>
+            
+            </div>
+
+            
+            
+            <p>As one of the most heavily attended museums in the United States, the Museum houses the Burke Baker Planetarium, Wortham GIANT Screen Theatre, Cockrell Butterfly Center and a fascinating variety of permanent exhibit areas that examine astronomy, space science, paleontology, energy, chemistry and much more. The Museum is a major science learning center with over a half million school children visiting annually, including every fourth grade and seventh grade class in the Houston Independent School District.</p>
+            
+            <br/>
+
+            <h3>What there is to offer</h3>
+
+            <div class="galleryBox">
+
+                <div class="gallery">
+                    <a href="https://www.hmns.org/exhibits/permanent-exhibitions/the-morian-hall-of-paleontology/"><img src = "houston_img/dinoeins.jpg" alt = "This is a picture of a dinosaur "></a>
+                </div>
+
+                <div class="gallery">
+                    <a href="https://www.hmns.org/exhibits/permanent-exhibitions/the-morian-hall-of-paleontology/"><img src = "houston_img/dinozwei.jpg"  alt = "This is a picture of a dinosaur "></a>
+                </div>
+
+                <div class="gallery">
+                    <a href="https://www.hmns.org/exhibits/permanent-exhibitions/the-morian-hall-of-paleontology/"><img src = "houston_img/dinodrei.jpg"  alt = "This is a picture of a dinosaur "></a>
+                </div>
+
+                <div class="gallery">
+                     
+                    <a href="https://www.hmns.org/exhibits/special-exhibitions/life-in-stone/"> <img src = "houston_img/stone.jpg" alt = "This is a picture of a treated stone "> </a>
+                         
+                </div>
+
+                <div class="gallery">
+                    <a href="https://www.hmns.org/exhibits/permanent-exhibitions/ancient-egypt/"><img src = "houston_img/mummy.jpg" alt = "This is a picture of a mummy "></a>
+                </div>
+
+                <div class="gallery">
+                    <a href="https://www.hmns.org/exhibits/permanent-exhibitions/the-morian-hall-of-paleontology/"><img src = "houston_img/turtle.jpg"  alt = "This is a picture of a turtle skeleton incased in stone"></a>
+                </div>
+
+                <div class="gallery">
+                    <a href="https://www.hmns.org/exhibits/permanent-exhibitions/ancient-egypt/"><img src = "houston_img/carvedstone.jpg" alt = "This is a picture of a stone slab with egyption carvings"></a>
+                </div>
+
+                <div class="gallery">
+                    <a href="https://www.hmns.org/exhibits/permanent-exhibitions/ancient-egypt/"><img src = "houston_img/carvedstone2.jpg" alt = "This is a picture of a carved stone slab"></a> 
+                </div>
+
+                <div class="gallery">
+                    <a href="https://www.hmns.org/exhibits/permanent-exhibitions/ancient-egypt/"><img src = "houston_img/carvedstone3.jpg" alt = "This is a picture of a stone slab with egyption carvings"></a>
+                </div>
+
+            </div>
+            
+        </div>
+        
+        <br/>
+        
+        <div class= "mainBox" id="rice">
+            
+            <h2>Rice University</h2>
+            
+            <div class = "frontimg">
+            
+                <img src = "houston_img/ricefront.jpg" alt = "This is a picture of the rice university campus">
+            
+            </div>
+            
+            
+            <p>Rice University is a comprehensive research university located on a beautiful campus in Houston, Texas. Rice produces the next generation of leaders and advances tomorrow’s thinking. Located in an urban environment on a 300-acre tree-lined campus, Rice University seizes its advantageous position to pursue pathbreaking research and create innovative collaboration opportunities that contribute to the betterment of our world.</p>
+            
+            <div class = "riceBox">
+             
+                <div class="riceimg1">
+                <img src = "houston_img/riceimg1.jpg" alt = "This is a picture of a dinosaur">
+                    <div class="imgText">
+                    This is a picture of Lovett Hall. Lovett Hall was built in 1912 and renamed in 1947 after President Emeritus Edgar Odell Lovett
+                    </div>
+                </div>
+
+                <div class = "riceimg2">
+                <img src = "houston_img/riceimg2.jpg" alt = "This is a picture of an archway on campus">
+                    <div class="imgText">
+                    It's tradition that students don't walk back through the arch until graduation
+                    </div>
+                    
+                </div>
+                
+                <div class = "riceimg3">
+                <img src = "houston_img/riceimg5.jpg" alt = "This is a picture of a wooden sculpture of Rice's mascot">
+                    <div class="imgText">
+                    This is a photo of a wooden sculpture of Rice's mascot, the owl. 
+                    </div>
+                </div>
+                
+                <div class = "riceimg3">
+                <img src = "houston_img/riceimg4.jpg" alt = "This is a picture of a statue">
+                    <div class="imgText">
+                    This is a statue of William Marsh Rice, the founder of Rice University.
+                    </div>
+                </div>
+                
+                <div class = "riceimg3">
+                <img src = "houston_img/berlinwall.jpg" alt = "This is a picture of a piece of the Berlin wall">
+                    <div class="imgText">
+                    This piece of the Berlin Wall can be found on campus
+                    </div>
+                </div>
+
+            </div>
+        
+        </div>
+        
+        
+              
+        <br/>
+        <br/>
+        <br/>        
+        <br/>
+
+        <div class= "footer">
+<a href="#top">Return to top</a>
+    </div>
+
+    
+</body>
+</html>
